@@ -18,7 +18,10 @@ class HomePage extends StatelessWidget {
                 children: [
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.notifications_none),
+                    icon: Icon(
+                      Icons.notifications_none,
+                      color: Color.fromARGB(255, 71, 70, 70),
+                    ),
                     color: Colors.grey,
                     iconSize: 30,
                   ),
@@ -27,7 +30,10 @@ class HomePage extends StatelessWidget {
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.person_outlined),
+                    icon: Icon(
+                      Icons.person_outlined,
+                      color: Color.fromARGB(255, 71, 70, 70),
+                    ),
                     color: Colors.grey,
                     iconSize: 30,
                   )
@@ -72,11 +78,6 @@ class HomePage extends StatelessWidget {
               height: 200,
               width: 370,
               decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage(
-                        "assets/images/electric_car.png",
-                      ),
-                      fit: BoxFit.contain),
                   borderRadius: BorderRadius.circular(12),
                   color: Color.fromARGB(255, 103, 197, 211)),
               child: Padding(
@@ -84,7 +85,7 @@ class HomePage extends StatelessWidget {
                 child: Column(
                   children: [
                     SizedBox(
-                      height: 10,
+                      height: 3,
                     ),
                     Row(
                       children: [
@@ -106,17 +107,35 @@ class HomePage extends StatelessWidget {
                       ],
                     ),
                     SizedBox(
-                      height: 3,
+                      height: 2,
                     ),
                     Row(
                       children: [
                         SizedBox(
-                          width: 5,
+                          width: 3,
                         ),
                         Text(
                           "Most Comfortable",
-                          style: TextStyle(
-                              color: Color.fromARGB(255, 15, 159, 179)),
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Container(
+                          height: 110,
+                          width: 300,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            image: DecorationImage(
+                                image: AssetImage(
+                                  "assets/images/eco1.jpg",
+                                ),
+                                fit: BoxFit.cover),
+                          ),
                         ),
                       ],
                     )
@@ -129,11 +148,6 @@ class HomePage extends StatelessWidget {
               height: 200,
               width: 370,
               decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage(
-                        "assets/images/electric_car.png",
-                      ),
-                      fit: BoxFit.contain),
                   borderRadius: BorderRadius.circular(12),
                   color: Color.fromARGB(255, 103, 197, 211)),
               child: Padding(
@@ -141,7 +155,7 @@ class HomePage extends StatelessWidget {
                 child: Column(
                   children: [
                     SizedBox(
-                      height: 10,
+                      height: 3,
                     ),
                     Row(
                       children: [
@@ -163,17 +177,105 @@ class HomePage extends StatelessWidget {
                       ],
                     ),
                     SizedBox(
-                      height: 3,
+                      height: 2,
                     ),
                     Row(
                       children: [
                         SizedBox(
-                          width: 5,
+                          width: 3,
                         ),
                         Text(
                           "Comfortable",
-                          style: TextStyle(
-                              color: Color.fromARGB(255, 15, 159, 179)),
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Container(
+                          height: 110,
+                          width: 300,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            image: DecorationImage(
+                                image: AssetImage(
+                                  "assets/images/eco1.jpg",
+                                ),
+                                fit: BoxFit.cover),
+                          ),
+                        ),
+                      ],
+                    )
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(height: 10),
+            Container(
+              height: 200,
+              width: 370,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  color: Color.fromARGB(255, 103, 197, 211)),
+              child: Padding(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 3,
+                    ),
+                    Row(
+                      children: [
+                        Text(
+                          "Nagpur ",
+                          style: TextStyle(color: Colors.white, fontSize: 25),
+                        ),
+                        Icon(
+                          Icons.arrow_forward,
+                          color: Colors.white,
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        Text(
+                          "Mumbai",
+                          style: TextStyle(color: Colors.white, fontSize: 25),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 2,
+                    ),
+                    Row(
+                      children: [
+                        SizedBox(
+                          width: 3,
+                        ),
+                        Text(
+                          "Comfortable",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Container(
+                          height: 110,
+                          width: 300,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            image: DecorationImage(
+                                image: AssetImage(
+                                  "assets/images/eco1.jpg",
+                                ),
+                                fit: BoxFit.cover),
+                          ),
                         ),
                       ],
                     )
