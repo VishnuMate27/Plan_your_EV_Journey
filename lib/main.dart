@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.cyan,
       ),
       debugShowCheckedModeBanner: false,
-      initialRoute: "/home",
+      initialRoute: "/plan_journey_form2",
       routes: {
         "/home": (context) => HomePage(),
         "/plan_journey_form": (context) => PlanPage(),

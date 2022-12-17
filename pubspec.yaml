@@ -44,6 +44,7 @@ dependencies:
   json_annotation: ^4.7.0
   geolocator:
   geocoding: 
+  google_fonts: ^3.0.1
  
   
 

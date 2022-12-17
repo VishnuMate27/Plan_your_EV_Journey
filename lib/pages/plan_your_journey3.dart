@@ -19,17 +19,47 @@ class PlanPage3 extends StatelessWidget {
               Row(
                 children: [
                   IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.map_outlined,
+                        color: Color.fromARGB(255, 71, 70, 70),
+                      )),
+                  Text(
+                    "Nagpur",
+                    style: TextStyle(
+                        fontSize: 20, color: Color.fromARGB(255, 71, 70, 70)),
+                  ),
+                  SizedBox(
+                    width: 3,
+                  ),
+                  GestureDetector(
+                    onTap: () {}, // Image tapped
+                    child: Image.asset(
+                      'assets/images/chevron-down.png',
+                      fit: BoxFit.contain, // Fixes border issues
+                    ),
+                  ),
+                  SizedBox(
+                    width: 130,
+                  ),
+                  IconButton(
                     onPressed: () {},
-                    icon: const Icon(Icons.notifications_none),
+                    icon: Icon(
+                      Icons.notifications_none,
+                      color: Color.fromARGB(255, 71, 70, 70),
+                    ),
                     color: Colors.grey,
                     iconSize: 30,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     width: 10,
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: const Icon(Icons.person_outlined),
+                    icon: Icon(
+                      Icons.person_outlined,
+                      color: Color.fromARGB(255, 71, 70, 70),
+                    ),
                     color: Colors.grey,
                     iconSize: 30,
                   )

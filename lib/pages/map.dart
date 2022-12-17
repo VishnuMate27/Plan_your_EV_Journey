@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 /*import 'package:flutter/material.dart';
 
 import 'package:evahan/widgets/secrets.dart'; // Stores the Google Maps API Key
@@ -630,6 +630,4 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 }
 */
-=======
 
->>>>>>> Stashed changes

@@ -2,21 +2,15 @@ import 'package:flutter/material.dart';
 
 Widget bottom() {
   return Container(
-    child: Column(
-      children: [
-        Scaffold(
-          bottomNavigationBar: BottomNavigationBar(
-            items: [
-              BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-              BottomNavigationBarItem(
-                  icon: Icon(Icons.charging_station_sharp),
-                  label: "Charging Stations"),
-              BottomNavigationBarItem(
-                  icon: Icon(Icons.route_sharp), label: "Route"),
-            ],
-          ),
-        )
-      ],
-    ),
-  );
+      child: BottomNavigationBar(
+    items: const [
+      BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+      BottomNavigationBarItem(
+          icon: ImageIcon(AssetImage("assets/images/routes.png")),
+          label: "Routes"),
+      BottomNavigationBarItem(
+          icon: ImageIcon(AssetImage("assets/images/charging station.png")),
+          label: "Route"),
+    ],
+  ));
 }
