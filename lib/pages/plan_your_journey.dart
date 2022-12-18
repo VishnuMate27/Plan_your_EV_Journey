@@ -141,11 +141,6 @@ class _PlanPageState extends State<PlanPage> {
                     SizedBox(
                       height: 10.0,
                     ),
-                    TextFormField(
-                        decoration: InputDecoration(
-                      label: Text("Enter Destination"),
-                      border: OutlineInputBorder(),
-                    ))
                   ],
                 ),
               ),

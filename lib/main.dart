@@ -2,6 +2,7 @@ import 'package:evahan/pages/Home.dart';
 import 'package:evahan/pages/plan_your_journey.dart';
 import 'package:evahan/pages/plan_your_journey2.dart';
 import 'package:evahan/pages/plan_your_journey3.dart';
+import 'package:evahan/pages/prelogin.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -20,12 +21,13 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.cyan,
       ),
       debugShowCheckedModeBanner: false,
-      initialRoute: "/plan_journey_form2",
+      initialRoute: "/prelogin",
       routes: {
         "/home": (context) => HomePage(),
         "/plan_journey_form": (context) => PlanPage(),
         "/plan_journey_form2": (context) => PlanPage2(),
         "/plan_journey_form3": (context) => PlanPage3(),
+        "/prelogin": (context) => PreLogin(),
       },
     );
   }
