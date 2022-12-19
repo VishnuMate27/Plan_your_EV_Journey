@@ -10,7 +10,7 @@ Widget bottom() {
           label: "Routes"),
       BottomNavigationBarItem(
           icon: ImageIcon(AssetImage("assets/images/charging station.png")),
-          label: "Route"),
+          label: "Charging Points"),
     ],
   ));
 }

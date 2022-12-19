@@ -45,6 +45,7 @@ dependencies:
   geolocator:
   geocoding: 
   google_fonts: ^3.0.1
+  toggle_switch: ^2.0.1
  
   
 

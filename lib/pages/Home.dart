@@ -92,10 +92,10 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 20,
+                height: 15,
               ),
               slideButton(),
-              SizedBox(height: 5),
+              SizedBox(height: 15),
               journeyDetails(),
               SizedBox(
                 height: 20,

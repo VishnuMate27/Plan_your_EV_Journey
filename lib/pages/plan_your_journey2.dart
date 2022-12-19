@@ -207,19 +207,192 @@ class PlanPage2 extends StatelessWidget {
                   const SizedBox(
                     height: 25,
                   ),
-                  Container(
-                      width: 300,
-                      height: 50,
-                      color: Colors.cyan[600],
-                      child: const Center(
-                        child: Text(
-                          "Book your slots",
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold),
-                        ),
-                      )),
+                  InkWell(
+                    onTap: (() {
+                      showModalBottomSheet(
+                          isScrollControlled: true,
+                          context: context,
+                          isDismissible: false,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(50),
+                            topRight: Radius.circular(50),
+                          )),
+                          builder: ((context) {
+                            return Container(
+                                decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.cyan),
+                                    borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(50),
+                                        topRight: Radius.circular(50))),
+                                height: 550,
+                                child: Column(
+                                  children: [
+                                    const SizedBox(
+                                      height: 20,
+                                    ),
+                                    const Text(
+                                      "Comfortable Journey",
+                                      style: TextStyle(
+                                          fontSize: 25,
+                                          fontWeight: FontWeight.bold,
+                                          color: Color.fromARGB(
+                                              255, 32, 118, 131)),
+                                    ),
+                                    const SizedBox(
+                                      height: 10,
+                                    ),
+                                    Row(
+                                      children: const [
+                                        Padding(
+                                            padding: EdgeInsets.only(left: 70),
+                                            child: SizedBox(
+                                              child: Text(
+                                                "Route has  17 Charging Stations available.\n You are suggested  2  of them.",
+                                                style: TextStyle(
+                                                    color: Color.fromARGB(
+                                                        255, 97, 96, 96)),
+                                              ),
+                                            ))
+                                      ],
+                                    ),
+                                    const SizedBox(
+                                      height: 20,
+                                    ),
+                                    Row(
+                                      children: [
+                                        Container(
+                                            height: 80,
+                                            width: 390,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(
+                                                  color: const Color.fromARGB(
+                                                      255, 189, 179, 179)),
+                                            ),
+                                            child: const Padding(
+                                                padding: EdgeInsets.only(
+                                                    left: 70, top: 15),
+                                                child: SizedBox(
+                                                  child: Text(
+                                                    "\t Nagpur",
+                                                    style: TextStyle(
+                                                      color: Color.fromARGB(
+                                                          255, 97, 96, 96),
+                                                      fontSize: 25,
+                                                    ),
+                                                  ),
+                                                )))
+                                      ],
+                                    ),
+                                    Row(
+                                      children: [
+                                        Container(
+                                          height: 80,
+                                          width: 390,
+                                          decoration: BoxDecoration(
+                                              border: Border.all(
+                                                  color: const Color.fromARGB(
+                                                      255, 189, 179, 179))),
+                                          child: const Padding(
+                                            padding: EdgeInsets.only(
+                                                left: 70, top: 15),
+                                            child: SizedBox(
+                                              child: Text(
+                                                "1. Jaika Motors",
+                                                style: TextStyle(
+                                                  color: Color.fromARGB(
+                                                      255, 97, 96, 96),
+                                                  fontSize: 25,
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                    Row(
+                                      children: [
+                                        Container(
+                                            height: 80,
+                                            width: 390,
+                                            decoration: BoxDecoration(
+                                                border: Border.all(
+                                                    color: const Color.fromARGB(
+                                                        255, 189, 179, 179))),
+                                            child: const Padding(
+                                                padding: EdgeInsets.only(
+                                                    left: 70, top: 17),
+                                                child: SizedBox(
+                                                  child: Text(
+                                                    "2. Radisson Blue",
+                                                    style: TextStyle(
+                                                      color: Color.fromARGB(
+                                                          255, 97, 96, 96),
+                                                      fontSize: 25,
+                                                    ),
+                                                  ),
+                                                )))
+                                      ],
+                                    ),
+                                    Row(
+                                      children: [
+                                        Container(
+                                          height: 80,
+                                          width: 390,
+                                          decoration: BoxDecoration(
+                                              border: Border.all(
+                                                  color: const Color.fromARGB(
+                                                      255, 189, 179, 179))),
+                                          child: const Padding(
+                                              padding: EdgeInsets.only(
+                                                  left: 70, top: 17),
+                                              child: SizedBox(
+                                                child: Text(
+                                                  " \t Hydrabad",
+                                                  style: TextStyle(
+                                                    color: Color.fromARGB(
+                                                        255, 97, 96, 96),
+                                                    fontSize: 25,
+                                                  ),
+                                                ),
+                                              )),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                      height: 25,
+                                    ),
+                                    Container(
+                                        width: 300,
+                                        height: 50,
+                                        color: Colors.cyan[600],
+                                        child: const Center(
+                                          child: Text(
+                                            "Book your slots",
+                                            style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 18,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                        )),
+                                  ],
+                                ));
+                          }));
+                    }),
+                    child: Container(
+                        width: 300,
+                        height: 50,
+                        color: Colors.cyan[600],
+                        child: const Center(
+                          child: Text(
+                            "Book your slots",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold),
+                          ),
+                        )),
+                  ),
                 ]),
               )
             ],
